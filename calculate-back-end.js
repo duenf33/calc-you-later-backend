@@ -1,9 +1,9 @@
 /******************
  * YOUR CODE HERE *
  ******************/
-const calculate = function(value1, value2, sign){
-  const num1 = parseInt(value1, 10);
-  const num2 = parseInt(value2, 10);
+const calculate = function(num1, num2, sign){
+  num1 = parseFloat(num1);
+  num2 = parseFloat(num2);
   const char = sign.toLowerCase();
   if(char === 'x' || char === 'multiply' || char === 'times' || char === 'multiplied by'){
   return num1 * num2;
